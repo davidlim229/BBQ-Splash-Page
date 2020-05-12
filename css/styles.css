@@ -29,7 +29,8 @@ h2 {
 }
 
 h1 ~ p,
-h2 + p {
+h2 + p,
+.btn-primary {
     font-weight: 900;
     color: #F18119;
     text-transform: uppercase;
@@ -62,20 +63,19 @@ p {
 }
 
 .container > * {
-    max-width: 500px;
-    width: 85%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .container-intro {
-    background-image: url(../images/dark-ribs.jpg);
+    background-image: url(../images/ribs.jpg);
     background-color: #6e737a;
+    background-blend-mode: multiply;
     min-height: 50vh;
     background-size: cover;
     justify-content: space-between;
     padding-bottom: 2em;
-    /* margin-bottom: 1.5em; */
 }
 
 .container-main {
@@ -88,11 +88,47 @@ h2 + p {
 
 .top-text {
     order: -1;
+    border-top: 5px solid orange;
+    padding-top: .25em;
+    border-image: linear-gradient(to right, #FFA51D, #FF713B) 1;
 }
 
-form * {
+form > * {
     margin-top: .5em;
     margin-bottom: .5em;
+    width: 85%;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #818181;
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+.button {
+    display: inline-block;
+}
+.btn-primary {
+    color: white;
+    font-size: .625rem;
+    border-radius: 6px;
+    border: 0;
+    padding: .5em 0;
+    background-image: linear-gradient(to right, #FFA51D, #FF713B);
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: black;
+    transform: scale(1.05);
 }
 
 @media (min-width: 500px) {
