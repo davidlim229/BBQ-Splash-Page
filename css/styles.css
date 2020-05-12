@@ -131,7 +131,7 @@ input:focus {
     transform: scale(1.05);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
     body {
         display: flex;
         font-size: 1.125rem;
