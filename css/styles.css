@@ -1,0 +1,96 @@
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+/**********
+TYPOGRAPHY
+**********/
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: #FFF;
+    font-weight: 300;
+}
+
+h1 + p,
+h2 {
+    font-size: 1.3125rem;
+}
+
+h1 ~ p,
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fine-print {
+    font-size: .625rem;
+    color: #989898;
+}
+
+strong {
+    font-weight: 900;
+}
+
+
+/***********
+Layout
+***********/
+h1,
+h2,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container * {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-intro {
+    background-image: url(../images/dark-ribs.jpg);
+    background-color: #6e737a;
+    min-height: 100vh;
+    background-size: cover;
+    justify-content: space-between;
+    padding-bottom: 2em;
+    /* margin-bottom: 1.5em; */
+}
+
+.container-main {
+    padding: 2em 0;
+}
+
+h2 + p {
+    margin-bottom: 1.5em;
+}
+
+.top-text {
+    order: -1;
+}
+
+form * {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+
+
